@@ -1,0 +1,48 @@
+$iconSpritePath: "../images/glyphicons-halflings.png";
+$iconWhiteSpritePath: "../images/glyphicons-halflings-white.png";
+
+@import 'sass-bootstrap/lib/bootstrap';
+/*
+
+article {	
+	section {
+		min-height: 400px;
+	}
+}
+
+.affix-top {
+    top: 32%; 
+	right: 0;
+	position:absolute;
+	z-index:2;
+}
+.affix {
+    top: 50px;
+	right: 0;
+	z-index:2;
+}*/
+
+
+html,body{height:100%;}
+section{min-height:900px;}
+
+.affix-top {
+    top: 32%; 
+	right: 0;
+	position:absolute;
+	z-index:2;
+}
+.affix {
+    top: 50px;
+	right: 0;
+	z-index:2;
+}
+
+#mainContainer {height:100%;}
+
+#dotNav {
+	z-index: 5;
+	right: 7%;
+	padding: 7px;
+	padding-top: 12px;
+}
