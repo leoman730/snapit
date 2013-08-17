@@ -13,7 +13,7 @@ $(window).bind('scroll',function(e){
 
 function redrawDotNav(){
   
-  	var topNavHeight = 300;
+  	var topNavHeight = 100;
   	var numDivs = $('section').length;
 	
   	$('#dotNav li a').removeClass('active').parent('li').removeClass('active');  	
@@ -39,6 +39,7 @@ function redrawDotNav(){
       var docTop = $(document).scrollTop()+topNavHeight;
       
       if(docTop >= thisTop && (docTop < nextTop)){
+        $('#dotNav li').removeClass('active');
         $('#dotNav li').eq(i).addClass('active');
       }
 	});   
