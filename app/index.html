@@ -8,8 +8,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+
+        <!--- Add responsiveness --->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap-theme.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="components/modernizr/modernizr.js"></script>
@@ -17,22 +22,178 @@
     </head>
     <body>
 
-        <div class="container">
-            <div class="row">                
-                <nav class="span4 affix" data-spy="affix" data-offset-top="100" id='dotNav'>
-                    <ul class='nav nav-list well'>
-                        <li><a href="#introduction">Introduction</a></li>
-                        <li><a href="#survey">Survey</a></li>
-                        <li><a href="#survery_report">Survey Report</a></li>
-                        <li><a href="#hypothesis">Strategic Hypothesis</a></li>
-                    </ul>
-                </nav>
+    <nav class="span4 affix" data-spy="affix" data-offset-top="100" id='dotNav'>
+        <ul class='nav nav-list well'>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#survey">Survey</a></li>
+            <li><a href="#survery_report">Survey Report</a></li>
+            <li><a href="#hypothesis">Strategic Hypothesis</a></li>
+        </ul>
+    </nav>
 
-                <article class="span8" id="maincontent">
-                    <section id='introduction'><h2>Introduction</h2></section>
-                    <section id='survey'><h2>Survey</h2></section>
-                    <section id='survery_report'><h2>Survey Report</h2></section>                    
-                    <section id='hypothesis'><h2>Strategic Hypothesis</h2></section>
+
+        <div class="container">
+
+            <div class="row" id="userflow">
+                <img src="images/userflow.png" alt="" class="userflow img-responsive">
+                <div class="hotspot" id="viewjournal"></div>
+
+            </div>
+
+
+
+
+
+            <div class="row">                
+                <article id="maincontent">
+                    <section id='introduction'>
+                        <h2>Introduction</h2>
+                        
+                        <div class="row">
+                            <div class="image col-sm-3 col-md-3 col-lg-3">[app image]</div>
+                            <article class="col-sm-3 col-md-9 col-lg-9">
+                            <p>Snapit, a fun and simple digital assets management tool for your mobile device.
+                            We have taken photos, videos more today than ever in human history. To  manage digital assets have not been an  easy task. With Snapit, this can ever been simpler.</p>
+                            </article>                            
+                        </div>
+
+                        <div class="row">
+                            <h2>The Story</h2>
+                            <div class="image col-md-3">[person portrait]</div>
+                            <div class="col-md-3">
+                                Monica is 30 year old stay home mother with 2 beautiful daughters. She has a been copywriter freelancer for the past couple. Ever since her first daughter was born, she take the advantage of  her smart phone record all the precious memory with her family. As time goes by, she found that her digital asset growth ‘exponentially’ and become unmanageable; She is desperate to find a tool to help her organize it….
+
+                            </div>
+
+                            <div class="image col-md-3">[person portrait]</div>
+                            <div class="col-md-3">                                
+                                Dave is amateur journalism. He loves to use his many mobile applications to  take photos, videos, audio and note for anything he found interested. However, to search through his digital assets to find something he need quickly is always a tedious task because they are scattering in many place. He needs a better tool that is easy to use and quickly to search for the digital assets he need…
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <h3>Story continue...</h3>
+                            <p class="row">Monica and Dave searched through the internet to find the right tool and they have try: Evernote, Picasa, Instangram etc; however none of them provide a unified solution for what they looking for.</p>
+
+                            <div class="image row col-md-12">[put images of apps here with cross sign]</div>
+
+                        </div>
+
+                    </section>
+                    
+
+                    <section id="opportunity">
+                        <h2>Opportunity</h2>
+                        <div class="row">
+                            <div class='image col-md-4'>[quote: "CAN I HAVE ONE APP TO DO ALL THESE STUFFS FOR ME"]</div>
+                            <p class="col-md-6 col-md-offset-2">
+                                It turns out there are many smartphone users facing similar problems like Monica and Dave. Most of the mobile applications lack of features that users are looking for. While one application can do one thing but can’t do another; therefore, people usually end up using multiple applications to store their digital assets. 
+                            </p>
+                        </div>
+        
+
+                    </section>
+
+
+
+                    <section id="research_discovery">
+                        <h2>Research &amp; Discovery</h2>
+
+                        <p>
+                            To understand the opportunity better, we conducted an online survey. To build the survey, we were using a service from Typeform.com. We then using facebook and address book as a channel to reach the audient.
+                        </p>
+                        
+                        <div class="row">
+                            <div class="image col-md-3">[typeform screenshot]</div>
+                            <div class="image col-md-3">[facebook, address book with manifier]</div>
+                            <div class="image col-md-3">[Finding cloud]</div>
+                            
+                            <div class="col-md-offset-1 col-md-2">
+                                Finding Summary:
+                                <ul>
+                                    <li>finding #1</li>
+                                    <li>finding #2</li>
+                                    <li>finding #3</li>
+                                </ul>
+                            </div>                    
+    
+                        </div>
+    
+                    </section>
+
+    
+
+                    <section id='user_model'>
+                        <h2>User Model</h2>
+                        <div class="row">
+                            <div class="col-md-4">
+                                We also conducted interview with some potential users to understanding their motivations and thought processes.
+                            </div>
+
+                            <div class="image col-md-6 col-md-offset-2">[user model screenshot]</div>
+                        </div>
+
+                    </section>
+                    
+
+
+                    <section id='sketch'>
+                        <h2>Sketch</h2>
+                        <div class="row">
+                            <div class="image col-md-6">[Some sketch screenshot]</div>
+
+                            <div class="col-md-4 col-md-offset-2">
+                                We also conducted interview with some potential users to understanding their motivations and thought processes.
+                            </div>
+                        </div>
+                    </section>                    
+
+                    <section id='wireframe'>
+                        <h2>User Flow and wirefram</h2>
+                        <div class="row">
+                            <div class="image col-md-6">[userflow image map]</div>
+
+                            <div class="image col-md-4 col-md-offset-2">
+                                [wireframe reponse to user flow]
+                            </div>
+                        </div>
+                    </section>  
+
+                    <section id='usability'>
+                        <h2>Usability testing</h2>
+                        <div class="row">
+                            <div class="image">["image of users"]</div>
+                        </div>
+                        
+                        <div class="row">
+                            <p>
+                                For the first task, all 3 testers were able to find their own way to tackle the task. For second task, testers seem able to finish the first half (taking a video); however, have trouble to find out how to put it to a private journal. For the third task, testers was somehow managed to tackle it; however doesn’t know how to take the advantage of tagging feature the app provides.
+                            </p>
+                        </div>
+
+
+                        <div class="row image">[improvement1]</div>
+                        <div class="row image">[improvement2]</div>
+                        <div class="row image">[improvement3]</div>
+
+                    </section>  
+
+                    
+                    <section id="interactive">
+                        <h2>Interactive prototype</h2>
+                         <div class="row image">[link to interactive]</div>
+                    </section>
+
+                    <section id="conclusion">
+                        <h2>Conclusion</h2>
+                        <p>
+                            This conclustion the presentation. Put timelinejs on the left side nav?
+                        </p>
+                    </section>
+
+
+
                 </article>
             </div>
         </div>
@@ -60,19 +221,7 @@
         <!-- endbuild -->
 
         <!-- build:js scripts/plugins.js -->
-        <script src="components/sass-bootstrap/js/bootstrap-affix.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-alert.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-dropdown.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tooltip.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-modal.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-transition.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-button.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-popover.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-typeahead.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-carousel.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-scrollspy.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-collapse.js"></script>
-        <script src="components/sass-bootstrap/js/bootstrap-tab.js"></script>
+        <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
         <!-- endbuild -->
 </body>
 </html>

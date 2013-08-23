@@ -62,3 +62,28 @@ $('#dotNav li').click(function(){
 });
 
 /* end dot nav */
+
+
+
+(function(){
+
+
+
+})();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
