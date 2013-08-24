@@ -19,9 +19,7 @@ function redrawDotNav(){
   	$('#dotNav li a').removeClass('active').parent('li').removeClass('active');  	
   	$('section').each(function(i,item){
       var ele = $(item), nextTop;
-      
-      console.log(ele.next().html());
-      
+            
       if (typeof ele.next().offset() != "undefined") {
         nextTop = ele.next().offset().top;
       }
@@ -66,7 +64,34 @@ $('#dotNav li').click(function(){
 
 
 (function(){
+  var timeout;
 
+  $('.hotspot').hover( function onEnter(e, i) {
+    var $container = $('#wireframeContainer');
+
+    var offset = $(this).position();
+    $container.css({ left: offset.left + $(this).width()/2, top: offset.top + $(this).height()/2 });
+
+    // update container content
+    $container.find('img').attr('src', $(this).find('img').attr('src'));
+    $container.find('.note').html($(this).find('.note').html());
+
+    $container.show();
+
+  }, function onLeave() {
+    timeout = window.setTimeout( function() {
+      $('#wireframeContainer').hide();
+      timeout == null;
+    }, 100);  
+  });
+
+  $('#wireframeContainer').hover( function onEnter() {
+    if (timeout !== null) {
+      window.clearTimeout(timeout);
+    }
+  }, function onLeave() {
+    $('#wireframeContainer').hide();
+  });
 
 
 })();

@@ -25,6 +25,8 @@ section{
 	min-height:300px;
 }
 
+
+
 .image {
 	background-color: #f7f7f9;
 	height: 300px;
@@ -35,6 +37,10 @@ section{
 
 #introduction {
 	.image { float: left; }
+	#headline {
+		margin-top: 65px;
+		margin-bottom: 40px;
+	}
 
 }
 
@@ -45,6 +51,27 @@ section{
 
 #userflow {
 	position: relative;
+	
+	#wireframeContainer {
+		position: absolute;
+		background-color: #ffffff;
+		padding: 5px;
+		border: 1px #e6e6e6 solid;
+		// opacity: 0.5;
+		display: none;
+		z-index: 99;		
+		font-size: 0.6em;
+		font-weight: normal;
+		p {
+			font-size: 0.6em;
+			font-weight: normal;
+		}
+		
+		img, .note {
+			float: left;
+		}
+
+	}
 
 	.hotspot {
 		position: absolute;
@@ -56,13 +83,22 @@ section{
 			background-color: blue;
 			cursor: pointer;
 		}
+		img, .note { display: none; }
+
 	}
 
-	#viewjournal {
-		top: 24%;
-		left: 8%;
-	}
-
+	#home {top: 4%; left: 34%; }
+	#viewassets {top: 20%; left: 8%; }
+	#editassets {top: 88%; left: 2%; width: 51%; }
+	#writeasset {top: 37%; left: 32%; }
+	#chooseasset {top: 20%; left: 24%; }
+	#assetlisting {top: 69%; left: 16%; }
+	#privateassets { top: 32%; left: 17%; }
+	#publicassets { top: 32%; left: 2%; }
+	#searchassets { top: 20%; left: 45%; }
+	#manageaccount { top: 20%; left: 60%; }
+	#settings { top: 32%; left: 59%; width: 38%; }
+	#managecategory { top: 69%; left: 53%; width: 43%; }
 
 }
 
