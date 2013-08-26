@@ -33,16 +33,21 @@ body{
 	min-width: 320px;	
 }
 
+.container {
+	max-width: 1280px;
+	min-width: 320px;
+	margin: auto;
+	border: #e6e6e6 solid 1px;
+
+	hr { border-top: 5px #e6e6e6 dotted; margin-bottom: 35px;}
+
+}
+
 section{
 	min-height:300px;
 }
 
 
-
-.image {
-	background-color: #f7f7f9;
-	height: 300px;
-}
 .row {
 	margin-bottom: 15px;
 }
@@ -53,8 +58,12 @@ section{
 		margin-top: 65px;
 		margin-bottom: 40px;
 	}
-
 }
+
+#story {
+	font-size: 0.8em;
+}
+
 
 
 #graph {
@@ -95,6 +104,7 @@ section{
 			background-color: blue;
 			cursor: pointer;
 		}
+
 		img, .note { display: none; }
 
 	}
