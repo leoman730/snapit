@@ -99,10 +99,9 @@ section{
 		position: absolute;
 		width: 12%;
 		height: 8%;
-		background-color: green;
+		
 		opacity: 0.3;
 		&:hover {
-			background-color: blue;
 			cursor: pointer;
 		}
 
@@ -274,7 +273,9 @@ section{
     text-shadow: 0 1px 1px rgba(255,255,255,0.7);
 }
 
-
+#carousel {
+	display: none;
+}
 
 
 

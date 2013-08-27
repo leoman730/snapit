@@ -43,6 +43,12 @@ function redrawDotNav(){
 	});   
 }
 
+
+$('#slideToggle').click( function() {
+  $('#carousel').toggle();
+});
+
+
 /* get clicks working */
 $('#dotNav li').click(function(){
   
